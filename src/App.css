@@ -1,0 +1,5 @@
+.card-body{
+    padding: 1.5rem;
+    background: rgba(0, 0, 15, 30%);
+    z-index: 1;
+}
