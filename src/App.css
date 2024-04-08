@@ -1,5 +1,31 @@
-.card-body{
+.card-body-outlined{
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0%);  
+    border-width: 1px;
+    border-color: black;
+    z-index: 1;
+}
+.card-body-30{
     padding: 1.5rem;
     background: rgba(0, 0, 15, 30%);
     z-index: 1;
 }
+.card-body-50{
+    padding: 1.5rem;
+    background: rgba(0, 0, 15, 50%);
+    z-index: 1;
+}
+.card-body-80{
+    padding: 1.5rem;
+    background: rgba(0, 0, 15, 80%);
+    z-index: 1;
+}
+.day-tour-hero{
+    z-index: 1;
+    top: 0;
+    height: 100vh;
+    
+}
+* {
+    scroll-behavior: smooth;
+  }

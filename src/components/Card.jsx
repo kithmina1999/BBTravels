@@ -1,17 +1,21 @@
-import { Button } from '@mui/material'
+
 import React from 'react'
 
-const Card = ({title,content,buttonText}) => {
+const Card = ({title,content,buttonText,bgHover,cardBody,contentColor,titleColor,textHover,buttonTextColor,hoverButtonBg,buttonLink}) => {
+
+      
+  
+  
   return (
-    <div className='w-[250px] card-body rounded-md  relative hover:bg-sky-900'>
-        <div className='text-center font-bold text-slate-50 z-20'>
+    <div className={`lg:w-[320px] w-[full] ${cardBody} rounded-md  relative hover:${bgHover} hover:${textHover}`}>
+        <div className={`text-center font-bold font-mono ${titleColor} z-20 hover:${textHover}`}>
             {title}
         </div>
-        <div className='text-sm text-white p-1 mt-4 text-center'>
+        <div className={`text-sm ${contentColor} p-1 mt-4 text-center hover:${textHover} font-mono`}>
             {content}
         </div>
-        <div className='mx-auto flex justify-center border rounded-xl mt-4 hover:bg-black hover:border-black'>
-        <Button sx={{color:'#ffffff'}} >{buttonText}</Button>
+        <div className={`mx-auto flex justify-center border rounded-xl mt-4 hover:${hoverButtonBg} hover:border-black`}>
+        <a className={`p-2 font-mono ${buttonTextColor}`} href={buttonLink}>{buttonText}</a>
         </div>
     </div>
   )
